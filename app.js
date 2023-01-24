@@ -9,7 +9,10 @@ e.addEventListener("click", (event) => {
 let clckButon = event.currentTarget.classList
 
 if (clckButon.contains("btn-container--decrease")){
-     counter--;
+   if(counter > 0){
+       counter--;
+   }
+  
 }
 else if(clckButon.contains("btn-container--increase")){
     counter++;
